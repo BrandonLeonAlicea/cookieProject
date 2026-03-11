@@ -15,7 +15,6 @@
         <div class="left">
             <div class="form-icon"></div>
             <h1 class="title">Cookie Order Form</h1>
-            <h3>Please give a one week notice for your order</h3>
         </div>
 
         <div class="right">
@@ -38,7 +37,8 @@
 
     <div class="info">
         <form action="/action_page.php">
-            <label for="fname">First name:</label>
+            <h2>Your Info*</h2>
+            <label for="fname">Your name:</label>
             <input type="text" id="fname" name="fname"><br><br>
             <label for="lname">Phone number:</label>
             <input type="text" id="lname" name="lname"><br><br>
@@ -51,7 +51,7 @@
     <div class="pickUp">
         
         <div class="date">
-            <h2>Pick up Date and time</h2>
+            <h2>Pick up Date and time*</h2>
             <input type=date id="pickupdate" name="month,day" min="2026-01-01">
             <h3>What time will you pick it up:</h3>
             <label for="pickup-time">Pickup Time:</label>
@@ -60,16 +60,16 @@
 
 
         <div class="brownies">
-            <h2>Mini Bars & Cookies to include:</h2>
+            <h2>Mini Bars & Cookies to include*</h2>
             <p>Chocolate Fudge brownies, Espresso Brownies, Blondies</p>
             <p>Lemon Bars, Pecan Caramel Bars, Chocolate Ganache Brownies</p>
             <p>Salted Chocolate Chip Cookies, Oatmeal Raisin Cookies, White Chocolate Raisin Oatmeal Cookies</p>
             <p>Snickerdoodle Cookies, Triple Chocolate Cinnamon Cookies, Gluten Free Coconut Macaroons</p>
             <form action="size1">
-                <input type="checkbox" id="small1" name="Small" value="size">
+                <input type="radio" id="small1" name="size" value="small1">
                 <label for="small"> Small Tray ( 50 pieces ) ~ $32.00</label>
 
-                <input type="checkbox" id="large1" name="large" value="size">
+                <input type="radio" id="large1" name="size" value="large1">
                 <label for="small"> Large Tray ( 100 pieces ) ~ $62.00</label>
             </form>
 
@@ -77,10 +77,10 @@
         <div class="cannoli">
             <p>Mini cannoli's, mini eclairs and mini cream puffs are available at an additional charge.</p>
             <form action="size2">
-                <input type="checkbox" id="small2" name="Small" value="size">
+                <input type="radio" id="small2" name="size" value="small2">
                 <label for="small"> Small Tray ( 50 pieces ) ~ $47.00</label>
 
-                <input type="checkbox" id="large2" name="large" value="size">
+                <input type="radio" id="large2" name="size" value="large2">
                 <label for="small"> Large Tray ( 100 pieces ) ~ $77.00</label>
             </form>
 

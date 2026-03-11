@@ -69,42 +69,42 @@ img {
 }
 
 .info{
-    border: 2px solid red;
-    border-radius: 15px 50px 30px;
-    width: 200px;
-    height: 150px;
+    border: 2px solid rgb(158, 156, 156);
+    border-radius: 15px;
+    background-color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 20px;
     margin: 20px;
 
 }
 
 .date{
-    border: 2px solid red;
-    border-radius: 5px;
+    border: 2px solid rgb(158, 156, 156);
+    border-radius: 15px;
     padding: 20px;
     margin: 20px;
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    background-color: white;
 }
 
 .brownies{
-    border: 2px solid red;
-    border-radius: 5px;
+    border: 2px solid rgb(158, 156, 156);
+    border-radius: 15px;
+    padding: 20px;
     margin: 20px;
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    background-color: white;
 }
 
 .cannoli{
-    border: 2px solid red;
-    border-radius: 5px;
+    border-radius: 15px;
+    border: 2px solid rgb(158, 156, 156);
+    padding: 20px;
     margin: 20px;
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    background-color: white;
 }
