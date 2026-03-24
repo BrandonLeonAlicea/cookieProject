@@ -12,6 +12,16 @@ img {
     padding: 0px;
 }
 
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (min-width: 600px){}
+
+@media only screen and (min-width: 768px){}
+
+@media only screen and (min-width: 992px){}
+
+@media only screen and (min-width: 1200px){}
+
 
 
 .hero {
@@ -68,6 +78,13 @@ img {
     cursor:pointer;
 }
 
+.title2{
+    display: flex;
+    justify-content: center;
+}
+
+
+
 .info{
     border: 2px solid rgb(158, 156, 156);
     border-radius: 15px;
@@ -107,4 +124,22 @@ img {
     display: flex;
     justify-content: center;
     background-color: white;
+}
+
+.submit-button{
+    display: flex;
+    justify-content: center;
+    color: rgb(158, 156, 156);
+    height: 50px;
+    padding: 5px;
+    
+    
+}
+
+.transparent-btn {
+    background-color: transparent;
+    border: none;
+    
+
+
 }
