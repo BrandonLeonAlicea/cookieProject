@@ -18,7 +18,7 @@
         </div>
 
         <div class="right">
-            <span class="material-symbols-outlined">responses</span>
+            <span class="material-symbols-outlined">*Please give a one week notice for your order*</span>
         </div>
 
     </header>
@@ -29,66 +29,92 @@
 
         </div>
     </div>
+    <form action="/action_page.php">
 
-    <div class="title2">
-        <h1>Pastry and Cookie Order Form</h1>
-        <h3>*Please give a one week notice for your order*</h3>
-    </div>
-
-    <div class="info">
-        <form action="/action_page.php">
-            <h2>Your Info*</h2>
-            <label for="fname">Your name:</label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label for="lname">Phone number:</label>
-            <input type="text" id="lname" name="lname"><br><br>
-
-        </form>
-        <div class="name"></div>
-        <div class="contact"></div>
-    </div>
-
-    <div class="pickUp">
+        <div class="title2">
+            <h1>Pastry and Cookie Order Form</h1>
+        </div>
         
-        <div class="date">
-            <h2>Pick up Date and time*</h2>
-            <input type=date id="pickupdate" name="month,day" min="2026-01-01">
-            <h3>What time will you pick it up:</h3>
-            <label for="pickup-time">Pickup Time:</label>
-            <input type="time" id="pickup-time" name="pickup-time" min="07:00" max="15:00" step="1800"required>
+
+        <div class="info">
+            <div class="details">
+                <h2>Your info*</h2>
+                <h3>Your name</h3>
+                <input type="text" id="fname" name="fname" required>
+                <h3>Phone Number</h3>
+                <input type="text" id="lname" name="lname" required>
+            </div>
         </div>
 
+        <br>
 
-        <div class="brownies">
-            <h2>Mini Bars & Cookies to include*</h2>
-            <p>Chocolate Fudge brownies, Espresso Brownies, Blondies</p>
-            <p>Lemon Bars, Pecan Caramel Bars, Chocolate Ganache Brownies</p>
-            <p>Salted Chocolate Chip Cookies, Oatmeal Raisin Cookies, White Chocolate Raisin Oatmeal Cookies</p>
-            <p>Snickerdoodle Cookies, Triple Chocolate Cinnamon Cookies, Gluten Free Coconut Macaroons</p>
-            <form action="size1">
-                <input type="radio" id="small1" name="size" value="small1">
-                <label for="small"> Small Tray ( 50 pieces ) ~ $32.00</label>
+        <div class="pickUp">
 
-                <input type="radio" id="large1" name="size" value="large1">
-                <label for="small"> Large Tray ( 100 pieces ) ~ $62.00</label>
-            </form>
-
-        </div>
-        <div class="cannoli">
-            <p>Mini cannoli's, mini eclairs and mini cream puffs are available at an additional charge.</p>
-            <form action="size2">
-                <input type="radio" id="small2" name="size" value="small2">
-                <label for="small"> Small Tray ( 50 pieces ) ~ $47.00</label>
-
-                <input type="radio" id="large2" name="size" value="large2">
-                <label for="small"> Large Tray ( 100 pieces ) ~ $77.00</label>
-            </form>
-
-
+            <div class="date">
+                <h2>Pick up Date and time*</h2>
+                <input type=date id="pickupdate" name="month,day" min="2026-01-01" required>
+                <h3>What time will you pick it up:</h3>
+                <input type="time" id="pickup-time" name="pickup-time" min="07:00" max="15:00" step="1800" required>
+            </div>
         </div>
 
-        <input type="submit" value="Submit">
-    </div>
+        <br>
+
+
+            <div class="brownies">
+                <div class="text">
+                    <h2>Mini Bars & Cookies to include*</h2>
+                    <p>
+                        Chocolate Fudge Brownies <br>
+                        Espresso Brownies <br>
+                        Blondies <br>
+                        Lemon Bars <br>
+                        Pecan Caramel Bars <br>
+                        Chocolate Ganache Brownies <br>
+                        Salted Chocolate Chip Cookies <br>
+                        Oatmeal Raisin Cookies <br>
+                        White Chocolate Raisin Oatmeal Cookies <br>
+                        Snickerdoodle Cookies <br>
+                        Triple Chocolate Cinnamon Cookies <br>
+                        Gluten Free Coconut Macaroons
+                    </p>
+                    <form action="size1">
+                        <input type="radio" id="small1" name="size" value="small1">
+                        <label for="small"> Small Tray ( 50 pieces ) ~ $32.00</label>
+
+                        <input type="radio" id="large1" name="size" value="large1">
+                        <label for="small"> Large Tray ( 100 pieces ) ~ $62.00</label>
+                    </form>
+                </div>
+
+                
+
+            </div>
+
+            <br>
+
+            <div class="cannoli">
+                <p>Mini cannoli's, mini eclairs and mini cream puffs are available at an additional charge.</p>
+                <form action="size2">
+                    <input type="radio" id="small2" name="size" value="small2">
+                    <label for="small"> Small Tray ( 50 pieces ) ~ $47.00</label>
+
+                    <input type="radio" id="large2" name="size" value="large2">
+                    <label for="small"> Large Tray ( 100 pieces ) ~ $77.00</label>
+                    <button class="transparent-btn" type="reset">Clear selection</button>
+                </form>
+
+
+
+            </div>
+            <br>
+
+            <div class="submit-button">
+                <input type="submit" value="Submit">
+            </div>
+            <br>
+    </form>
+    
 </body>
 
 </html>
